@@ -129,3 +129,16 @@ h2 {
     top: 25px;
     z-index: 1;
 }
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #2F8D46;
+}
+
+.progress {
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: #2F8D46;
+}
