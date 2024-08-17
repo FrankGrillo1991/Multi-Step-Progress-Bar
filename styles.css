@@ -118,3 +118,14 @@ h2 {
     margin: 0 auto 10px auto;
     padding: 2px;
 }
+
+#progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: 1;
+}
