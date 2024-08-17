@@ -28,6 +28,30 @@ $(document).ready(function () {
             },
             duration: 500
         });
+        setProgressBar(++current);
+    });
+
+    $(".previous-step").click(function () {
+        currentGfgStep = $(this).parent();
+        previousGfgStep = $(this).parent().prev();
+
+        $("#progressbar li").eq($("fieldset")
+        .index(currentGfgStep)).removeClass("active");
+
+        previousGfgStep.show();
+
+        currentGfgStep.step.animate({ opacity: 0 }, {
+            step: function (now) {
+                opacity = 1 - now;
+
+                currentGfgStep.css({
+                    'display': 'none',
+                    'position': 'relative'
+                })
+                previousGfgStep.css({ 'opacity': opacity });
+            },
+            duration: 500
+        });
         setProgressBar(--current);
     });
 
