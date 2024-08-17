@@ -65,4 +65,4 @@ function setProgressBar(currentStep) {
 $(".submit").click(function () {
     return false;
 });
-})
+});
