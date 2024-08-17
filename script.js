@@ -12,7 +12,7 @@ $(document).ready(function () {
         currentGfgStep = $(this).parent();
         nextGfgStep = $(this).parent().next();
 
-        $("progressbar li").eq($("fieldset")
+        $("#progressbar li").eq($("fieldset")
         .index(nextGfgStep)).addClass("active");
 
         nextGfgStep.show();
