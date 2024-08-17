@@ -35,3 +35,15 @@ h2 {
 #form fieldset:not(:first-of-type) {
     display: none;
 }
+
+#form .previous-step, .next-step {
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right;
+}
