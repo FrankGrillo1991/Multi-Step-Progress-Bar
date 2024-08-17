@@ -31,3 +31,7 @@ h2 {
 .finish {
     text-align: center;
 }
+
+#form fieldset:not(:first-of-type) {
+    display: none;
+}
