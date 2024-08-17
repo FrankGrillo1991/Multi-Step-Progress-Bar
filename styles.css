@@ -47,3 +47,12 @@ h2 {
     margin: 10px 5px 10px 0px;
     float: right;
 }
+
+.form, .previous-step {
+    background: #616161;
+}
+
+.form, .next-step {
+    background: #2F8D46;
+}
+
